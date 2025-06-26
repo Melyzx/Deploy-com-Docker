@@ -7,4 +7,14 @@ RUN apt update && apt install -y unzip curl \
  && unzip asf.zip -d /app \
  && rm asf.zip
 
+# Copia o arquivo ASF.json (coloque ele na mesma pasta do Dockerfile)
+COPY ASF.json /app/ASF.json
+
+# Expõe a porta (não obrigatório, mas ajuda na documentação)
+EXPOSE 1242
+
+# Define variáveis padrão para IPC (mas Render vai sobrescrever com ENV vars)
+ENV IPC_PORT=1242
+ENV IPC_BindAddress=0.0.0.0
+
 CMD ["dotnet", "ArchiSteamFarm.dll"]
