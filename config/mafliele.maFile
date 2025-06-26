@@ -1,0 +1,16 @@
+{
+  "account_name": "xxarturxx22",
+  "device_id": "android:dab401ec-f4d7-4f49-9ff4-f9dd38d3ae74",
+  "identity_secret": "goOV6CYnxkP4RIp1wmsv+ISnHeg=",
+  "revocation_code": "R34134",
+  "secret_1": "s2c3WLkhUokbSSEjdk4WZxjhu1I=",
+  "serial_number": 2916605067640056003,
+  "server_time": 1750972278,
+  "Session": {
+    "SteamID": 76561198964215751
+  },
+  "shared_secret": "ZfCAJmADYXnDbGhpYjQRzmIaILs=",
+  "status": 1,
+  "token_gid": "4b6684c8fa7151a",
+  "uri": "otpauth://totp/Steam:xxarturxx22?secret=MXYIAJTAANQXTQ3MNBUWENARZZRBUIF3&issuer=Steam"
+}
