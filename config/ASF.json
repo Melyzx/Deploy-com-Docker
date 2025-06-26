@@ -1,6 +1,6 @@
 {
   "IPC": true,
-  "IPCPassword": 190808ar_,
+  "IPCPassword": "190808ar_",
   "AutoRestart": true,
   "AutoStart": true,
   "FarmCards": false,
