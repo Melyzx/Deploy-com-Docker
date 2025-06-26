@@ -10,6 +10,8 @@ RUN apt update && apt install -y unzip curl \
 # Copia o arquivo ASF.json (coloque ele na mesma pasta do Dockerfile)
 COPY config/ASF.json /app/config/ASF.json
 
+COPY config/bots/ /app/config/bots/
+
 # Expõe a porta (não obrigatório, mas ajuda na documentação)
 EXPOSE 1242
 
