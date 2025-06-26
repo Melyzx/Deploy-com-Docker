@@ -7,16 +7,13 @@ RUN apt update && apt install -y unzip curl \
  && unzip asf.zip -d /app \
  && rm asf.zip
 
-# Copia o arquivo ASF.json (coloque ele na mesma pasta do Dockerfile)
-COPY config/ASF.json /app/config/ASF.json
+# Copia todo o config, incluindo a pasta bots com seus bots
+COPY config/ /app/config/
 
 COPY config/bots/ /app/config/bots/
 
-# Expõe a porta (não obrigatório, mas ajuda na documentação)
+# Expõe a porta do IPC (opcional, só pra documentação)
 EXPOSE 1242
 
-# Define variáveis padrão para IPC (mas Render vai sobrescrever com ENV vars)
-ENV IPC_PORT=1242
-ENV IPC_BindAddress=0.0.0.0
-
-CMD ["dotnet", "ArchiSteamFarm.dll"]
+# Roda o ASF bindando o IPC em 0.0.0.0 pra Render detectar a porta aberta
+CMD ["dotnet", "ArchiSteamFarm.dll", "--ipc-bind=0.0.0.0"]
