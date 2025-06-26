@@ -12,6 +12,8 @@ COPY config/ /app/config/
 
 COPY config/bots/ /app/config/bots/
 
+COPY config/farm_ark.maFile /app/config/farm_ark.maFile
+
 # Expõe a porta do IPC (opcional, só pra documentação)
 EXPOSE 1242
 
