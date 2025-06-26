@@ -1,5 +1,8 @@
 {
+  "IPC": true,
+  "IPCPassword": null,
   "AutoRestart": true,
   "AutoStart": true,
-  "IPC": false
+  "FarmCards": false,
+  "SteamLogin": "xxarturxx22"
 }
