@@ -18,4 +18,4 @@ COPY config/Farm_Ark.maFile /app/config/Farm_Ark.maFile
 EXPOSE 1242
 
 # Roda o ASF bindando o IPC em 0.0.0.0 pra Render detectar a porta aberta
-CMD ["dotnet", "ArchiSteamFarm.dll", "--ipc-bind=0.0.0.0"]
+ENTRYPOINT ["dotnet", "ArchiSteamFarm.dll", "--ipchost", "0.0.0.0"]
