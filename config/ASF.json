@@ -1,7 +1,5 @@
 {
-  "IPC": true,
-  "IPCHost": "0.0.0.0",
-  "IPCPassword": "190808ar_",
+  "IPC": false,
   "AutoRestart": true,
   "AutoStart": true,
   "FarmCards": false,
