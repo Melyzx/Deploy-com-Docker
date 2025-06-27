@@ -12,6 +12,8 @@ COPY config/ /app/config/
 
 COPY config/Farm_Ark.maFile /app/config/Farm_Ark.maFile
 
+ENV ASPNETCORE_URLS=http://0.0.0.0:1242
+
 # Expõe a porta do IPC (opcional, só pra documentação)
 EXPOSE 1242
 
