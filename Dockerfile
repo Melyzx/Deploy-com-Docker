@@ -10,9 +10,6 @@ RUN apt update && apt install -y unzip curl \
 # Copia todo o config, incluindo a pasta bots com seus bots
 COPY config/ /app/config/
 
-# A linha abaixo é redundante se a linha acima já existe
-# COPY config/bots/ /app/config/bots/ 
-
 COPY config/Farm_Ark.maFile /app/config/Farm_Ark.maFile
 
 # Expõe a porta do IPC (opcional, só pra documentação)
