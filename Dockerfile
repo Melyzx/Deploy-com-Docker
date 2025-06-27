@@ -19,4 +19,4 @@ COPY config/Farm_Ark.maFile /app/config/Farm_Ark.maFile
 EXPOSE 1242
 
 # CRÍTICO: Esta linha diz ao Docker para iniciar o ASF
-ENTRYPOINT ["dotnet", "ArchiSteamFarm.dll"]
+CMD ["dotnet", "ArchiSteamFarm.dll", "--IPCConfig:IPCHost=0.0.0.0", "--IPCConfig:IPCPort=1242"]
