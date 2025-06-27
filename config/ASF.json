@@ -1,7 +1,9 @@
 {
-  "IPC": false,
+  "IPC": true,
+  "IPCHost": "0.0.0.0",
+  "IPCPort": 1242,
+  "IPCPassword": "190808",
   "AutoRestart": true,
   "AutoStart": true,
-  "FarmCards": false,
-  "SteamLogin": "xxarturxx22"
+  "SteamOwnerID": 76561198964215751
 }
