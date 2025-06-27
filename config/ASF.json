@@ -1,8 +1,7 @@
 {
   "IPC": true,
+  "IPCHost": "0.0.0.0",
   "IPCPassword": "190808ar_",
-  "IPC_Port": 1242,
-  "IPC_BindAddress": "0.0.0.0",
   "AutoRestart": true,
   "AutoStart": true,
   "FarmCards": false,
