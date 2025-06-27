@@ -16,6 +16,3 @@ COPY config/Farm_Ark.maFile /app/config/Farm_Ark.maFile
 
 # Expõe a porta do IPC (opcional, só pra documentação)
 EXPOSE 1242
-
-# Roda o ASF bindando o IPC em 0.0.0.0 pra Render detectar a porta aberta
-ENTRYPOINT ["dotnet", "ArchiSteamFarm.dll", "--ipchost", "0.0.0.0"]
